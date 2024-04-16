@@ -13,7 +13,11 @@ public class ClassStart2 {
         student2.age = 16;
         student2.grade = 80;
 
-        Student[] students = {student1, student2};
+        Student[] students = new Student[2];
+        students[0] = student1;
+        students[1] = student2;
+
+//        Student[] students = {student1, student2};
 
         for(Student s:students) {
             System.out.println("이름 : " + s.name + " 나이 : " + s.age + " 성적 : " + s.grade);
